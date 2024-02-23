@@ -1,0 +1,106 @@
+.navBar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  padding-top: 24px;
+  background-color: hsl(0, 0%, 98%);
+
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__left {
+      display: flex;
+    }
+    &__right {
+      display: flex;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-right: 39px;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 500;
+    align-self: center;
+    color: hsl(0, 0%, 41%);
+    .arrowSvg {
+      margin-left: 4px;
+      margin-bottom: 1px;
+      stroke: #686868;
+      transition: transform 100ms ease-out;
+    }
+    .open {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      color: hsl(0, 0%, 8%);
+      .arrowSvg {
+        stroke: black;
+      }
+    }
+  }
+  .navLinks__left__Features {
+    position: relative;
+    .featuresDD {
+      visibility: hidden;
+      top: 37px;
+      left: -75px;
+      width: 153px;
+    }
+    .visible {
+      visibility: visible;
+    }
+  }
+  .navLinks__left__Company {
+    position: relative;
+    .companyDD {
+      visibility: hidden;
+      top: 37px;
+      width: 116px;
+      li {
+        margin-bottom: 16px;
+      }
+    }
+    .visible {
+      visibility: visible;
+    }
+  }
+  .navLinks__right__Register {
+    padding: 10px 20px;
+    margin-right: 40px;
+    margin-left: 8px;
+    outline: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      outline: 2px solid black;
+    }
+  }
+}
+
+.dropDownMenu {
+  position: absolute;
+  padding: 23px 20px 8px 25px;
+  border-radius: 10px;
+  background-color: white;
+  filter: drop-shadow(0 0px 20px hsl(0, 0%, 83%));
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 13px;
+
+    img {
+      width: 30px;
+      padding-right: 14px;
+    }
+  }
+}

@@ -14,7 +14,7 @@ body {
   padding: 0;
   font-size: 18px;
   font-family: "Epilogue", sans-serif;
-  /* //position: relative; ///for footer with absolute position --> */
+  position: relative;
 }
 body h1,
 body h2,
@@ -49,6 +49,195 @@ a {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.navBar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  padding-top: 24px;
+  background-color: hsl(0, 0%, 98%);
+}
+.navBar .navLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navBar .navLinks__left {
+  display: flex;
+}
+.navBar .navLinks__right {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin-right: 39px;
+  user-select: none;
+  font-size: 14px;
+  font-weight: 500;
+  align-self: center;
+  color: hsl(0, 0%, 41%);
+}
+ul li .arrowSvg {
+  margin-left: 4px;
+  margin-bottom: 1px;
+  stroke: #686868;
+  transition: transform 100ms ease-out;
+}
+ul li .open {
+  transform: rotate(180deg);
+}
+ul li:hover {
+  color: hsl(0, 0%, 8%);
+}
+ul li:hover .arrowSvg {
+  stroke: black;
+}
+ul .navLinks__left__Features {
+  position: relative;
+}
+ul .navLinks__left__Features .featuresDD {
+  visibility: hidden;
+  top: 37px;
+  left: -75px;
+  width: 153px;
+}
+ul .navLinks__left__Features .visible {
+  visibility: visible;
+}
+ul .navLinks__left__Company {
+  position: relative;
+}
+ul .navLinks__left__Company .companyDD {
+  visibility: hidden;
+  top: 37px;
+  width: 116px;
+}
+ul .navLinks__left__Company .companyDD li {
+  margin-bottom: 16px;
+}
+ul .navLinks__left__Company .visible {
+  visibility: visible;
+}
+ul .navLinks__right__Register {
+  padding: 10px 20px;
+  margin-right: 40px;
+  margin-left: 8px;
+  outline: 2px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+ul .navLinks__right__Register:hover {
+  outline: 2px solid black;
+}
+
+.dropDownMenu {
+  position: absolute;
+  padding: 23px 20px 8px 25px;
+  border-radius: 10px;
+  background-color: white;
+  filter: drop-shadow(0 0px 20px hsl(0, 0%, 83%));
+}
+.dropDownMenu li {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 13px;
+}
+.dropDownMenu li img {
+  width: 30px;
+  padding-right: 14px;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+}
+.hero .heroCentered {
+  margin: 0 auto;
+  display: flex;
+  height: 780px;
+  width: 1147px;
+  padding-top: 130px;
+}
+.hero .heroCentered__left {
+  padding-top: 103px;
+}
+.hero .heroCentered__left h1 {
+  padding-right: 140px;
+  font-size: 80px;
+  color: hsl(0, 0%, 8%);
+  letter-spacing: -0.01em;
+}
+.hero .heroCentered__left p {
+  margin-top: 48px;
+  padding-right: 200px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.55em;
+  color: hsl(0, 0%, 41%);
+}
+.hero .heroCentered__left button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  border-radius: 15px;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  transition: all 0.14s ease-in-out;
+}
+.hero .heroCentered__left button:hover {
+  outline: 1px solid black;
+  color: black;
+  background-color: hsl(0, 0%, 98%);
+}
+.hero .heroCentered__left .svgsSection {
+  display: flex;
+  align-items: center;
+  margin-top: 112px;
+}
+.hero .heroCentered__left .svgsSection img {
+  padding-right: 40px;
+}
+.hero .heroCentered__right {
+  width: 480px;
+  height: 640px;
+  flex-shrink: 0;
+  background-image: url("/images/image-hero-desktop.png");
+  background-size: contain;
+}
+
+.background {
+  background-color: hsl(0, 0%, 98%);
+  max-width: 1600px;
+  min-height: 100vh;
+  padding-bottom: 125px;
+  margin: 0 auto;
+}
+
+.divForLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7px;
+  padding-left: 44px;
+  padding-right: 62px;
 }
 
 /*# sourceMappingURL=main.css.map */
