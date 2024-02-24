@@ -4,12 +4,12 @@ let companyLink = document.querySelector(".navLinks__left__Company");
 let companyDD = document.querySelector(".companyDD");
 let featuresArrow = document.querySelector(".featuresArrow");
 let companyArrow = document.querySelector(".companyArrow");
+let humburgerButton = document.querySelector(".humburgerButton");
 
 featuresLink.addEventListener("click", (e) => {
   featuresDD.classList.toggle("visible");
   featuresArrow.classList.toggle("open");
   const hideOnSideClick = (e) => {
-    // console.log("click");
     if (
       e.composedPath().some((elem) => elem.id === "navLinks__left__Features")
     ) {
@@ -44,4 +44,9 @@ companyLink.addEventListener("click", (e) => {
 });
 companyDD.addEventListener("click", (e) => {
   e.stopImmediatePropagation();
+});
+
+////////humburger menu
+humburgerButton.addEventListener("click", () => {
+  humburgerButton.classList.toggle("open");
 });
