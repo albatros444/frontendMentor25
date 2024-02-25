@@ -60,6 +60,7 @@
   .navBar {
     display: none;
   }
+
   .navBarMobile {
     position: fixed;
     width: 100%;
@@ -71,38 +72,94 @@
       padding-left: 20px;
       padding-top: 25px;
     }
-    .humburgerButton {
-      margin-right: 25px;
-
-      div {
-        height: 2px;
-        background-color: #000;
-        margin: 6px 0px;
-        border-radius: 24px;
-        transition: 0.3s ease;
-      }
-      .one {
-        width: 32px;
-      }
-      .two {
-        width: 32px;
-      }
-      .three {
-        width: 32px;
-      }
+  }
+  // slide menu////////
+  .humburgerButton {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 32px;
+    height: 50px;
+    z-index: 7;
+    cursor: pointer;
+    div {
+      height: 2px;
+      background-color: #000;
+      margin: 6px 0px;
+      border-radius: 24px;
+      transition: 0.3s ease;
+    }
+    .one {
+      width: 32px;
+    }
+    .two {
+      width: 32px;
+    }
+    .three {
+      width: 32px;
+    }
+  }
+  .open {
+    .one {
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+      transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .two {
+      opacity: 0;
+    }
+    .three {
+      -webkit-transform: rotate(45deg) translate(-5px, -5px);
+      transform: rotate(45deg) translate(-6px, -6px);
+    }
+  }
+  .slideMenu {
+    position: fixed;
+    height: 100%;
+    right: -250px;
+    width: 65%;
+    z-index: 5;
+    padding: 80px 30px;
+    background-color: white;
+    transition: all 0.18s ease-in-out;
+    li {
+      font-size: 16px;
+      margin: 20px 0px;
+    }
+    .featuresDDmob {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin-left: 20px;
+      //////
+    }
+    .companyDDmob {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin-left: 20px;
+    }
+    .visible {
+      max-height: 185px;
     }
     .open {
-      .one {
-        -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-        transform: rotate(-45deg) translate(-5px, 5px);
-      }
-      .two {
-        opacity: 0;
-      }
-      .three {
-        -webkit-transform: rotate(45deg) translate(-5px, -5px);
-        transform: rotate(45deg) translate(-6px, -6px);
+      transform: rotate(180deg);
+    }
+    .navLinks__bottom {
+      margin-top: 40px;
+      text-align: center;
+      .navLinks__Register {
+        width: 100%;
+        padding: 10px 20px;
+        outline: 2px solid hsl(0, 0%, 41%);
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          outline: 2px solid black;
+        }
       }
     }
+  }
+  .slideMenuOpen {
+    right: 0;
   }
 }

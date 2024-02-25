@@ -46,7 +46,30 @@ companyDD.addEventListener("click", (e) => {
   e.stopImmediatePropagation();
 });
 
+///mobile ///////////////////
+let overlay = document.querySelector(".overlay");
+let slideMenu = document.querySelector(".slideMenu");
+let featuresMobile = document.querySelector(".navLinks__Features");
+let featuresDDmob = document.querySelector(".featuresDDmob");
+
+let companyMobile = document.querySelector(".navLinks__Company");
+let companyDDmob = document.querySelector(".companyDDmob");
+
+let featuresArrowMob = document.querySelector(".featuresArrowMob");
+let companyArrowMob = document.querySelector(".companyArrowMob");
+
+featuresMobile.addEventListener("click", () => {
+  featuresDDmob.classList.toggle("visible");
+  featuresArrowMob.classList.toggle("open");
+});
+companyMobile.addEventListener("click", () => {
+  companyDDmob.classList.toggle("visible");
+  companyArrowMob.classList.toggle("open");
+});
+
 ////////humburger menu
 humburgerButton.addEventListener("click", () => {
+  overlay.classList.toggle("overlayToggle");
   humburgerButton.classList.toggle("open");
+  slideMenu.classList.toggle("slideMenuOpen");
 });
