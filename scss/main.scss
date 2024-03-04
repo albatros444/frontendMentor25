@@ -2,9 +2,10 @@
 @import "footer";
 @import "navbar";
 @import "hero";
-
 .background {
   background-color: hsl(0, 0%, 98%);
+}
+.body {
   max-width: 1600px;
   min-height: 100vh;
   padding-bottom: 125px;

@@ -20,161 +20,168 @@
   </head>
   <body>
     <div class="background">
-      <!-- nav bar -->
-      <div class="navBar">
-        <div class="divForLogo">
-          <img src="/images/logo.svg" alt="" />
+      <div class="body">
+        <!-- nav bar -->
+        <div class="navBar">
+          <div class="divForLogo">
+            <img src="/images/logo.svg" alt="" />
+          </div>
+          <div class="navLinks">
+            <ul class="navLinks__left">
+              <li
+                id="navLinks__left__Features"
+                class="navLinks__left__Features"
+              >
+                <a href="#">Features</a>
+                <svg
+                  class="arrowSvg featuresArrow"
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                </svg>
+                <!-- drop down menu -->
+                <ul id="featuresMenuId" class="dropDownMenu featuresDD">
+                  <li>
+                    <img src="/images/icon-todo.svg" alt="" />
+                    <a href="#">Todo List</a>
+                  </li>
+                  <li>
+                    <img src="/images/icon-calendar.svg" alt="" />
+                    <a href="#">Calendar</a>
+                  </li>
+                  <li>
+                    <img src="/images/icon-reminders.svg" alt="" />
+                    <a href="#">Reminders</a>
+                  </li>
+
+                  <li>
+                    <img src="/images/icon-planning.svg" alt="" />
+                    <a href="#">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navLinks__left__Company" id="navLinks__left__Company">
+                <a href="#">Company</a>
+                <svg
+                  class="arrowSvg companyArrow"
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                </svg>
+                <ul id="companyMenuId" class="dropDownMenu companyDD">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li class="navLinks__left__Careers"><a href="#">Careers</a></li>
+              <li class="navLinks__left__About"><a href="#">About</a></li>
+            </ul>
+            <ul class="navLinks__right">
+              <li class="navLinks__right__Login"><a href="#">Login</a></li>
+              <li class="navLinks__right__Register">
+                <a href="#">Register</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="navLinks">
-          <ul class="navLinks__left">
-            <li id="navLinks__left__Features" class="navLinks__left__Features">
+        <!-- navBar mobile -->
+        <div class="navBarMobile">
+          <div class="MobileLogo">
+            <img src="/images/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="humburgerButton">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <!-- slide menu -->
+        <div class="slideMenu">
+          <ul class="navLinks">
+            <li id="navLinks__Features" class="navLinks__Features">
               <a href="#">Features</a>
               <svg
-                class="arrowSvg featuresArrow"
+                class="arrowSvg featuresArrowMob"
                 width="10"
                 height="6"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
               </svg>
-              <!-- drop down menu -->
-              <ul id="featuresMenuId" class="dropDownMenu featuresDD">
+
+              <ul id="featuresMenuId" class="featuresDDmob">
                 <li>
-                  <img src="/images/icon-todo.svg" alt="" />
+                  <div><img src="/images/icon-todo.svg" alt="" /></div>
+
                   <a href="#">Todo List</a>
                 </li>
                 <li>
-                  <img src="/images/icon-calendar.svg" alt="" />
+                  <div><img src="/images/icon-calendar.svg" alt="" /></div>
+
                   <a href="#">Calendar</a>
                 </li>
                 <li>
-                  <img src="/images/icon-reminders.svg" alt="" />
+                  <div><img src="/images/icon-reminders.svg" alt="" /></div>
+
                   <a href="#">Reminders</a>
                 </li>
 
                 <li>
-                  <img src="/images/icon-planning.svg" alt="" />
+                  <div><img src="/images/icon-planning.svg" alt="" /></div>
                   <a href="#">Planning</a>
                 </li>
               </ul>
             </li>
-            <li class="navLinks__left__Company" id="navLinks__left__Company">
+            <li class="navLinks__Company" id="navLinks__Company">
               <a href="#">Company</a>
               <svg
-                class="arrowSvg companyArrow"
+                class="arrowSvg companyArrowMob"
                 width="10"
                 height="6"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
               </svg>
-              <ul id="companyMenuId" class="dropDownMenu companyDD">
+              <ul id="companyMenuId" class="companyDDmob">
                 <li><a href="#">History</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </li>
-            <li class="navLinks__left__Careers"><a href="#">Careers</a></li>
-            <li class="navLinks__left__About"><a href="#">About</a></li>
+            <li class="navLinks__Careers"><a href="#">Careers</a></li>
+            <li class="navLinks__About"><a href="#">About</a></li>
           </ul>
-          <ul class="navLinks__right">
-            <li class="navLinks__right__Login"><a href="#">Login</a></li>
-            <li class="navLinks__right__Register"><a href="#">Register</a></li>
+          <ul class="navLinks__bottom">
+            <li class="navLinks__Login"><a href="#">Login</a></li>
+            <li class="navLinks__Register"><a href="#">Register</a></li>
           </ul>
         </div>
-      </div>
-      <!-- navBar mobile -->
-      <div class="navBarMobile">
-        <div class="MobileLogo">
-          <img src="/images/logo.svg" alt="" />
-        </div>
-      </div>
-      <div class="overlay"></div>
-      <div class="humburgerButton">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-      </div>
-      <!-- slide menu -->
-      <div class="slideMenu">
-        <ul class="navLinks">
-          <li id="navLinks__Features" class="navLinks__Features">
-            <a href="#">Features</a>
-            <svg
-              class="arrowSvg featuresArrowMob"
-              width="10"
-              height="6"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
-            </svg>
 
-            <ul id="featuresMenuId" class="featuresDDmob">
-              <li>
-                <div><img src="/images/icon-todo.svg" alt="" /></div>
-
-                <a href="#">Todo List</a>
-              </li>
-              <li>
-                <div><img src="/images/icon-calendar.svg" alt="" /></div>
-
-                <a href="#">Calendar</a>
-              </li>
-              <li>
-                <div><img src="/images/icon-reminders.svg" alt="" /></div>
-
-                <a href="#">Reminders</a>
-              </li>
-
-              <li>
-                <div><img src="/images/icon-planning.svg" alt="" /></div>
-                <a href="#">Planning</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navLinks__Company" id="navLinks__Company">
-            <a href="#">Company</a>
-            <svg
-              class="arrowSvg companyArrowMob"
-              width="10"
-              height="6"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
-            </svg>
-            <ul id="companyMenuId" class="companyDDmob">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </li>
-          <li class="navLinks__Careers"><a href="#">Careers</a></li>
-          <li class="navLinks__About"><a href="#">About</a></li>
-        </ul>
-        <ul class="navLinks__bottom">
-          <li class="navLinks__Login"><a href="#">Login</a></li>
-          <li class="navLinks__Register"><a href="#">Register</a></li>
-        </ul>
-      </div>
-
-      <!-- hero -->
-      <div class="hero">
-        <div class="heroCentered">
-          <div class="heroCentered__left">
-            <h1>Make remote work</h1>
-            <p>
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </p>
-            <button>Learn more</button>
-            <div class="svgsSection">
-              <div><img src="/images/client-databiz.svg" alt="" /></div>
-              <div><img src="/images/client-audiophile.svg" alt="" /></div>
-              <div><img src="/images/client-meet.svg" alt="" /></div>
-              <div><img src="/images/client-maker.svg" alt="" /></div>
+        <!-- hero -->
+        <div class="hero">
+          <div class="heroCentered">
+            <div class="heroCentered__left">
+              <h1>Make remote work</h1>
+              <p>
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button>Learn more</button>
+              <div class="svgsSection">
+                <div><img src="/images/client-databiz.svg" alt="" /></div>
+                <div><img src="/images/client-audiophile.svg" alt="" /></div>
+                <div><img src="/images/client-meet.svg" alt="" /></div>
+                <div><img src="/images/client-maker.svg" alt="" /></div>
+              </div>
             </div>
+            <div class="heroCentered__right"></div>
           </div>
-          <div class="heroCentered__right"></div>
         </div>
       </div>
 
