@@ -29,10 +29,12 @@
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
   visibility: hidden;
-  transition: all 0.3s;
 }
 .overlayToggle {
   visibility: visible;
+}
+.slideMenu {
+  display: none;
 }
 
 @import "mediaQs";

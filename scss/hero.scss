@@ -5,8 +5,9 @@
     margin: 0 auto;
     display: flex;
     height: 780px; //640+140
-    width: 1147px;
+    width: 1177px; //1147+30
     padding-top: 130px;
+    padding-left: 30px;
     &__left {
       padding-top: 103px;
       h1 {
@@ -26,7 +27,7 @@
       button {
         display: inline-block;
         margin-top: 50px;
-        padding: 15px 30px;
+        padding: 17px 30px;
         border: none;
         border-radius: 15px;
         outline: inherit;

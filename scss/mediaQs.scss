@@ -17,7 +17,7 @@
         background-repeat: no-repeat;
       }
       &__left {
-        padding: 40px 15px 80px 15px;
+        padding: 30px 15px 80px 15px;
         h1 {
           padding-right: 0;
           font-size: 35px;
@@ -76,8 +76,8 @@
   // slide menu////////
   .humburgerButton {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 20px;
+    right: 15px;
     width: 32px;
     height: 50px;
     z-index: 7;
@@ -113,30 +113,62 @@
     }
   }
   .slideMenu {
+    display: block;
     position: fixed;
     height: 100%;
-    right: -250px;
-    width: 65%;
+    right: -350px;
+    width: 64%;
     z-index: 5;
-    padding: 80px 30px;
+    padding: 55px 25px;
     background-color: white;
     transition: all 0.18s ease-in-out;
     li {
       font-size: 16px;
-      margin: 20px 0px;
+      margin: 25px 0px;
+      .arrowSvg {
+        margin-left: 11px;
+      }
     }
     .featuresDDmob {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      margin-left: 20px;
+      margin-left: 18px;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin: 23px 0px;
+        &:nth-child(1) {
+          margin-top: 30px;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 20px;
+          img {
+            height: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+
       //////
     }
     .companyDDmob {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      margin-left: 20px;
+      margin-left: 25px;
+      li:nth-child(1) {
+        margin-top: 27px;
+      }
+      li:nth-child(3) {
+        margin-bottom: 8px;
+      }
     }
     .visible {
       max-height: 185px;
@@ -145,13 +177,19 @@
       transform: rotate(180deg);
     }
     .navLinks__bottom {
-      margin-top: 40px;
+      margin-top: 35px;
       text-align: center;
+      a {
+        font-size: 14px;
+      }
+      font-size: 12px;
+
       .navLinks__Register {
         width: 100%;
         padding: 10px 20px;
-        outline: 2px solid hsl(0, 0%, 41%);
-        border-radius: 10px;
+        margin-top: -7px;
+        outline: 2px solid hsl(0, 0%, 55%);
+        border-radius: 12px;
         cursor: pointer;
         &:hover {
           outline: 2px solid black;

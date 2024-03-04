@@ -51,6 +51,7 @@ let overlay = document.querySelector(".overlay");
 let slideMenu = document.querySelector(".slideMenu");
 let featuresMobile = document.querySelector(".navLinks__Features");
 let featuresDDmob = document.querySelector(".featuresDDmob");
+let lisInFeatures = document.querySelectorAll(".navLinks ul");
 
 let companyMobile = document.querySelector(".navLinks__Company");
 let companyDDmob = document.querySelector(".companyDDmob");
@@ -58,11 +59,11 @@ let companyDDmob = document.querySelector(".companyDDmob");
 let featuresArrowMob = document.querySelector(".featuresArrowMob");
 let companyArrowMob = document.querySelector(".companyArrowMob");
 
-featuresMobile.addEventListener("click", () => {
+featuresMobile.addEventListener("click", (e) => {
   featuresDDmob.classList.toggle("visible");
   featuresArrowMob.classList.toggle("open");
 });
-companyMobile.addEventListener("click", () => {
+companyMobile.addEventListener("click", (e) => {
   companyDDmob.classList.toggle("visible");
   companyArrowMob.classList.toggle("open");
 });
@@ -72,4 +73,10 @@ humburgerButton.addEventListener("click", () => {
   overlay.classList.toggle("overlayToggle");
   humburgerButton.classList.toggle("open");
   slideMenu.classList.toggle("slideMenuOpen");
+});
+
+lisInFeatures.forEach((ul) => {
+  ul.addEventListener("click", (e) => {
+    e.stopImmediatePropagation();
+  });
 });
