@@ -191,7 +191,7 @@ ul .navLinks__right__Register:hover {
 .hero .heroCentered__left button {
   display: inline-block;
   margin-top: 50px;
-  padding: 17px 30px 17px 35px;
+  padding: 17px 28px 17px 32px;
   border: none;
   border-radius: 15px;
   outline: inherit;
@@ -213,19 +213,72 @@ ul .navLinks__right__Register:hover {
 .hero .heroCentered__left .svgsSection {
   display: flex;
   align-items: center;
-  margin-top: 112px;
+  margin-top: 106px;
 }
 .hero .heroCentered__left .svgsSection img {
   padding-right: 40px;
 }
 .hero .heroCentered__right {
   width: 480px;
-  height: 640px;
   flex-shrink: 0;
   background-image: url("/images/image-hero-desktop.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 830px) {
+  .background .body {
+    padding-bottom: 80px;
+  }
+  .background .body .navBar {
+    position: static;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .background .body .hero .heroCentered {
+    width: 700px;
+    height: 550px;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+  .background .body .hero .heroCentered__left {
+    padding-top: 90px;
+  }
+  .background .body .hero .heroCentered__left h1 {
+    padding-right: 30px;
+    font-size: 45px;
+  }
+  .background .body .hero .heroCentered__left p {
+    padding-right: 50px;
+    font-size: 16px;
+  }
+  .background .body .hero .heroCentered__left button {
+    margin-top: 40px;
+    padding: 13px 20px 13px 25px;
+    font-size: 16px;
+  }
+  .background .body .hero .heroCentered__left .svgsSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px -10px 0 -10px;
+    margin-top: 60px;
+    margin-right: 50px;
+  }
+  .background .body .hero .heroCentered__left .svgsSection div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .background .body .hero .heroCentered__left .svgsSection div img {
+    padding-right: 0;
+    width: 75%;
+  }
+  .background .body .hero .heroCentered__right {
+    width: 300px;
+    height: 100%;
+    margin-top: 70px;
+  }
+}
 .background {
   background-color: hsl(0, 0%, 98%);
 }
@@ -266,12 +319,12 @@ ul .navLinks__right__Register:hover {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 829px) {
   .background {
     background-color: white;
   }
   .body {
-    height: 800px;
+    height: 780px;
   }
   .hero {
     height: auto;
@@ -284,23 +337,27 @@ ul .navLinks__right__Register:hover {
     padding-left: 0px;
   }
   .hero .heroCentered__right {
-    width: 100%;
+    margin: 0 auto;
     height: 75vw;
+    max-width: 500px;
+    width: 100%;
+    max-height: 400px;
     background-image: url("/images/image-hero-mobile.png");
     background-repeat: no-repeat;
   }
   .hero .heroCentered__left {
-    padding: 50px 10px 80px 15px;
+    padding: 47px 10px 80px 15px;
   }
   .hero .heroCentered__left h1 {
     padding-right: 0;
-    font-size: 35px;
+    font-size: 36px;
     text-align: center;
   }
   .hero .heroCentered__left p {
-    margin-top: 20px;
+    margin-top: 15px;
     padding-right: 0;
     font-size: 16px;
+    line-height: 1.6em;
     text-align: center;
   }
   .hero .heroCentered__left button {
@@ -381,7 +438,7 @@ ul .navLinks__right__Register:hover {
     display: block;
     position: fixed;
     height: 100%;
-    right: -350px;
+    right: -550px;
     width: 64%;
     z-index: 5;
     padding: 55px 25px;

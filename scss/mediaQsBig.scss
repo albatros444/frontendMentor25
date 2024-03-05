@@ -1,0 +1,58 @@
+@media screen and (max-width: 1300px) and (min-width: 830px) {
+  .background {
+    .body {
+      padding-bottom: 80px;
+
+      .navBar {
+        position: static;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .hero {
+        .heroCentered {
+          width: 700px;
+          height: 550px;
+          padding-left: 0;
+          padding-top: 60px;
+          &__left {
+            padding-top: 90px;
+            h1 {
+              padding-right: 30px;
+              font-size: 45px;
+            }
+            p {
+              padding-right: 50px;
+              font-size: 16px;
+            }
+            button {
+              margin-top: 40px;
+              padding: 13px 20px 13px 25px;
+              font-size: 16px;
+            }
+            .svgsSection {
+              display: flex;
+              justify-content: space-around;
+              margin: 50px -10px 0 -10px;
+              margin-top: 60px;
+              margin-right: 50px;
+              div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  padding-right: 0;
+                  width: 75%;
+                }
+              }
+            }
+          }
+          &__right {
+            width: 300px;
+            height: 100%;
+            margin-top: 70px;
+          }
+        }
+      }
+    }
+  }
+}

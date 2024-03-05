@@ -8,6 +8,7 @@ let humburgerButton = document.querySelector(".humburgerButton");
 
 featuresLink.addEventListener("click", (e) => {
   featuresDD.classList.toggle("visible");
+  companyDD.classList.remove("visible");
   featuresArrow.classList.toggle("open");
   const hideOnSideClick = (e) => {
     if (
@@ -28,6 +29,7 @@ featuresDD.addEventListener("click", (e) => {
 /////////////////
 companyLink.addEventListener("click", (e) => {
   companyDD.classList.toggle("visible");
+  featuresDD.classList.remove("visible");
   companyArrow.classList.toggle("open");
   const hideOnSideClick = (e) => {
     if (
